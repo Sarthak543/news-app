@@ -74,7 +74,7 @@ export default class News extends Component {
     render() {
         return (
             <div className='container my-3'>
-                <h1 className='text-center'>News Monkey top headlines</h1>
+                <h1 className='text-center' style={{marginTop:"100px",marginBottom:"30px"}}>News Monkey top headlines</h1>
                 <InfiniteScroll
                     dataLength={this.state.articles.length}
                     next={this.fetchData}
